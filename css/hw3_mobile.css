@@ -1,0 +1,148 @@
+/*
+	HW 3 CNIT 133m 
+	student: CNIT 133m Irina Golovko
+	date: 11/01/2019 
+	Desc: It's an external hw3_mobile.css file
+		  for hw3_mobile.html ("Homework 3")
+*/
+
+html {
+    position: relative;
+    min-height: 100vh;
+    font-size:100%;
+  }
+
+.navbar {
+	background-color: #1874cd;
+}
+
+footer {
+	  background-color: #1874cd;
+	  position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+section.container {
+	margin-top: 5rem;
+}
+
+ h3 {
+ 	font-size: 1.2rem;
+ }
+ h4 {
+ 	font-size: 1.1rem;
+ }
+
+
+/*PRODUCT*/
+
+.card-header {
+	text-align: center;
+}
+
+#green {
+	background-color: #00cc99;
+}
+
+.light-green {
+	background-color: #b3ffec;
+}
+
+#accordion {
+	border: none;
+}
+
+a.card-link {
+	color: black;
+}
+
+img.card-img-top {
+	width:40%;
+}
+
+ 
+/*CONTACT US*/
+
+ul.contactInfo  {
+    list-style: none;
+ }
+
+ li.text {
+ 	text-align: center;
+ }
+
+ i.fa.fa-facebook-square {
+ 	font-size: 3rem;
+ }
+
+/*LOCATION*/
+
+#location {
+    margin-bottom: 20px;
+}
+
+#map {
+    width: 95%;
+}
+
+/* Devices (Galaxy S III, Nexus 5, Galaxy S5, iPhone 5/SE) */
+ @media (min-height: 500px) {
+  #map {height: 20rem;} 
+}
+
+/* Devices (Nexus 6P, Pixel 2, iPhone 6/7/8) */
+ @media (min-height: 660px) {
+  #map {height: 27rem;} 
+}
+
+/* Devices (iPhone 6/7/8) */
+ @media (min-height: 730px) {
+  #map {height: 30rem;} 
+}
+
+/* Devices (Pixel 2 XL, iPhone X) */
+ @media (min-height: 800px) {
+  #map {height: 35rem;} 
+}
+
+/* Devices (iPad, Laptop with HiDPI screen, Laptop with touch) */
+ @media (min-height: 950px) {
+  #map {height: 42rem;} 
+}
+
+/* Devices (iPad, Laptop with HiDPI screen, Laptop with touch) */
+ @media (min-height: 1300px) {
+  #map {height: 59rem;} 
+}
+
+/*For all pages*/
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+  h3 {font-size: 1.7rem;} 
+  h4 {font-size: 1.5rem;}
+  a.navbar-brand {font-size: 1.4rem;}
+  a.nav-link {font-size: 1.2rem}
+  img.card-img-top {width: 25%;}
+  footer.font-small {font-size: 1.2rem;}
+  dl.row dt, dd {font-size: 1.2rem;}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  h3 {font-size: 2rem;} /*1rem = 16px*/  
+  h4 {font-size: 1.7rem;} 
+  p {font-size: 1.2rem;}
+  a.navbar-brand {font-size: 1.7rem;}
+  a.nav-link {font-size: 1.4rem}
+  img.card-img-top {width: 20%;}
+  footer.font-small {font-size: 1.4rem;}
+  dl.row dt, dd {font-size: 1.3rem;}
+  #location {font-size: 1.2rem;}
+}
+
+
+

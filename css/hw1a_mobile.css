@@ -1,0 +1,84 @@
+/*
+	HW 1a CNIT 133m 
+	student: CNIT 133m Irina Golovko
+	date: 09/06/2019 
+	Desc: It's an external hw1a_mobile.css file
+		  for hw1a_mobile.html ("Homework 1A")
+*/
+
+
+body {
+	margin: 30px;
+	background-image: url(../img/white.jpg);
+	font-size: 1em;
+}
+
+#left {
+  float: left;
+  margin: 0 10px 10px 0;
+  border: 0px solid black;
+}
+
+h1 {
+	color: #800000;
+	position: relative;
+}
+
+h2 {
+	color: #800000;
+}
+
+.div2 {
+	clear: left;
+}
+
+.indent {
+	text-indent: 30px;
+
+}
+
+.center {
+	text-align: center;
+}
+
+li a {
+	text-decoration: none;
+	color: #0000ff;	
+}
+
+li a:hover {
+	text-decoration: underline;
+}
+
+#ul_blue {
+	list-style-type:none;
+	color: #0000ff;
+	font-weight: bold;
+}
+
+#b1 {
+  background-color: #1a75ff; 
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1em;
+  margin: 20px auto;
+}
+
+footer
+{
+	font-style: italic; 
+	color: #000000;
+	text-align: center;
+}
+
+a.footer
+{
+	text-decoration: underline;
+	color: #0000ff;
+}
+
+
