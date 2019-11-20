@@ -1,0 +1,21 @@
+{ 
+	"short_name": "PWA", 
+	"name": "Progressive Web App", 	
+	
+	"icons": [
+      {
+      	"src": "images/icon128.png",
+      	"type": "image/png",
+      	"sizes": "128x128"
+      },
+
+      {
+      	"src": "images/icon256.png",
+      	"type": "image/png",
+      	"sizes": "256x256"
+      }
+	],
+
+	"start_url": "index_mobile.html",
+	"display": "standalone" 
+}

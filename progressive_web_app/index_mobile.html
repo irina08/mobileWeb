@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- This is a comment 
+    purpose: HW - PWA with Service Worker - CNIT 133M Homeworks
+    student: CNIT 133M Irina Golovko
+    date: 11/11/2019 --> 
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Service Worker and PWA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Service Worker and PWA</title>
+    <script>
+      /* Add a global error event listener early on in the page load, 
+      to help ensure that browsers which don't support specific 
+      functionality still end up displaying a meaningful message.
+      */
+      window.addEventListener('error', function(error) {
+        if (ChromeSamples && ChromeSamples.setStatus) {
+          console.error(error);
+          ChromeSamples.setStatus(error.message + ' (Your browser may not support this feature.)');
+          error.preventDefault();
+        }
+      });
+    </script>
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/styles.css">
+    
+  </head>
+
+  <body> 
+    <div id="container">
+    <h1>Progressive Web Application</h1>
+    <p>A Progressive Web App (PWA) is an app that uses modern Web capabilities to offer users a very similar (if not better) experience to a native app.</p>
+    
+    <label for="images">Choose the Backgroud Image for your page:</label>
+    <br>
+    <select id="images">
+      <option value="images/lightblue.jpg">Light Blue</option>
+      <option value="images/lightgold.jpg">Light Gold</option>
+    </select>
+    <button id="show">Change Background Image</button>
+
+    <p>Being progressive means that a web app must work for every user on all devices, regardless of the browser being used. 
+    <br>
+    A PWA is also responsive, meaning it should fill the screen of a device perfectly, using the principles and techniques of responsive web design.
+    </p>
+    <p>A PWA is connectivity independence app, it should work in areas of low connectivity or even when there is no Internet connection available. This is accomplished by enhancing your app with a browser feature called service workers. The browser runs service worker scripts in the background to load your content almost instantly in an online connection and still display content so that your app works offline or in low-quality networks.
+    <br>A PWA should always be up to date, using service worker updates when new content is published and the user is connected to the Internet,that content should be made available in the app.
+    </p>
+    <p>Every PWA has to be served through an HTTPS connection to prevent snooping and ensure content hasn't been tampered with. 
+    <br>
+    A PWA is on the web, so users should be able to discover the app in search engines, this is one of the biggest advantages over native apps, which lack the searchability of progressive web apps.
+    <br>
+    PWAs make re-engagement easy through features like push notifications, just like on native apps. Using service workers and the push API, progressive web apps can deliver asynchronous notifications and updates to users that opt in.
+    <br>A PWA can be installed on the device's home screen, making it readily available to users.
+    <br>
+    PWAs are easily shared via URLs, users simply click a link to access the content they're looking for.
+    </p>
+
+    
+</div>
+    
+      <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('service_worker.js');
+        }
+
+        document.querySelector('#show').addEventListener('click', () => {
+          const imgUrl = document.querySelector('select').selectedOptions[0].value;
+          let imgElement = document.createElement('img');
+          imgElement.src = imgUrl;
+          document.body.background = imgElement.src;
+      });
+
+      </script>
+     
+  </body>
+</html>

@@ -1,0 +1,20 @@
+body { 
+	font-size: 1em; 
+	font-family: Arial, Verdana, serif; 
+}
+
+h1 { 
+	color: blue; 
+	text-align:center; 
+	font-style: italic; 
+}
+
+#container {  
+	width: 90%; 
+	margin: 10px; 
+}
+
+#show {
+	background-color: #80aaff;
+	color: white;
+}
