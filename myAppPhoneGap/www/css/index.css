@@ -1,0 +1,74 @@
+html {
+    position: relative;
+    min-height: 100vh;
+    font-size:100%;
+ }
+
+footer {
+	background-color: #333333;
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #9d9d9d;
+}
+
+i.fa.fa-github {
+    font-size: 2.5rem;
+ }
+
+ #codewars {
+    background-image: url(img/codewars.png);
+    display: block;
+    margin: 0 auto;
+}
+
+table, td {
+    border: none;
+}
+
+table {
+    width: 80%;
+    margin-left: 10%; 
+    margin-right: 10%;
+}
+
+td {
+    padding-right: 0.5rem;
+}
+
+li.list-group-item.text-left:nth-child(2n + 1) {
+    background-color: #F2F3F2;
+}
+
+li.list-group-item.text-left:nth-child(2n + 2) {
+    background-color: #D4D5D4;
+}
+
+@media (min-width: 768px) {  
+    table {
+        width: 50%;
+        margin-left: 25%; 
+        margin-right: 25%;
+    }
+
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        -ms-transform: translate(-30%, -30%);
+        transform: translate(-30%, -30%);
+    }
+
+    .list-group {
+        width: 50%;
+        margin-left: 25%; 
+        margin-right: 25%;
+       
+
+    }
+}
+
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<!-- xmlns:gap = "http://phonegap.com/ns/1.0" -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.aboutMe"
+        versionCode = "10"
+        version   = "1.0.0">
+
+    <name>About Me</name>
+
+    <description>
+        About Me sample application creating with using Phone Gap.
+    </description>
+
+    <author href="https://ccsf.edu" email="igolovko@mail.ccsf.edu">
+        Irina Golovko
+    </author>
+
+    <!-- Define the main entry-point to the application -->
+    <content src="index.html" />
+
+    <!-- Customize your app and platform with the preference element. -->
+    <preference name="DisallowOverscroll"         value="true" />
+    <!-- <preference name="permissions"                value="none"/> -->
+
+    <!-- Define a specific version of PhoneGap to build into your app. -->
+    <!-- <preference name="phonegap-version"       value="cli-6.5.0" /> -->
+
+    <!-- Plugins -->
+    <!-- Core plugins -->
+
+    <plugin name="cordova-plugin-battery-status" spec="2.0.3" />
+    <plugin name="cordova-plugin-camera" spec="4.1.0" />
+    <plugin name="cordova-plugin-console" spec="1.1.0" />
+    <plugin name="cordova-plugin-contacts" spec="3.0.1" />
+    <plugin name="cordova-plugin-device" spec="2.0.3" />
+    
+    <plugin name="cordova-plugin-dialogs" spec="2.0.2" />
+    
+    <plugin name="cordova-plugin-geolocation" spec="4.0.2" />
+    <plugin name="cordova-plugin-globalization" spec="1.11.0" />
+    
+    <plugin name="cordova-plugin-media" spec="5.0.3" />
+    <plugin name="cordova-plugin-media-capture" spec="3.0.3" />
+    <plugin name="cordova-plugin-network-information" spec="2.0.2" />
+    <plugin name="cordova-plugin-splashscreen" spec="5.0.3" />
+    <plugin name="cordova-plugin-statusbar" spec="2.4.3" />
+    <plugin name="cordova-plugin-vibration" spec="3.1.1" />
+    <plugin name="cordova-plugin-whitelist" spec="1.3.4" />
+    
+</widget>
